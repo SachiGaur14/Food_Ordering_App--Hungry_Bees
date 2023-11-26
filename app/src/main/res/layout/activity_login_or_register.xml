@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Activity.LoginOrRegister">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:tint="#41ECE7E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2"
+        tools:ignore="UseAppTint" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="290dp"
+        android:layout_height="410dp"
+        android:background="@drawable/background_white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="Hungry Bees"
+            android:textColor="#020D4A"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Order Food Online !!"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/SignWithEmail"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/red_btn"
+            android:drawableLeft="@drawable/whiteemail"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="SIGNIN WITH EMAIL"
+            android:textColor="#FBF8F8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/SignWithPhone"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_btn"
+            android:drawableLeft="@drawable/whitephone"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="SIGNIN WITH PHONE"
+            android:textColor="#FBF8F8"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#676565">
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/ORtext"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="#120F0F"
+                android:textSize="18sp" />
+
+            <TableRow
+                android:id="@+id/dr"
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#676565">
+
+            </TableRow>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/LogIn"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/green_btn"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="SIGN UP"
+            android:textColor="#FBF8F8"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

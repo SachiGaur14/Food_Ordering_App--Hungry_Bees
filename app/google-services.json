@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "537618380407",
+    "project_id": "hungry-bees-8bde7",
+    "storage_bucket": "hungry-bees-8bde7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537618380407:android:46604ba82e3248d01a7872",
+        "android_client_info": {
+          "package_name": "com.example.foodorderingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEk8yn0ST7Mbb3R0V4J2ELGly4YREZ-dM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

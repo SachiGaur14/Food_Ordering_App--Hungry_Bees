@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".Activity.LoginPhone">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:background="@drawable/background_white"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="Verify Your Phone Number"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/CountryCode"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/MobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#191717"
+                app:boxStrokeColor="#191717"
+                app:boxStrokeErrorColor="#DD0E0A"
+                app:errorTextColor="#DD0E0A"
+                app:placeholderTextColor="#191717">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_white"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:textColor="#191717"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/green_btn"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Send OTP"
+            android:textAllCaps="true"
+            android:textColor="#FBF8F8"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/NoAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account? Sign Up"
+            android:textAlignment="center"
+            android:textColor="#0E0E0E"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#0E0E0E">
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/ORtext"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="#0E0E0E"
+                android:textSize="18sp" />
+
+            <TableRow
+                android:id="@+id/dr"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#0E0E0E">
+
+            </TableRow>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/SignWithEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/red_btn"
+            android:drawableLeft="@drawable/whiteemail"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="SIGNIN WITH EMAIL"
+            android:textColor="#FBF8F8"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
